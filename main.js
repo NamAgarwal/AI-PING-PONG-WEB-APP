@@ -51,7 +51,7 @@ function gotPoses(results){
     console.log(results);
     right_wrist_x = results[0].pose.rightWrist.x;
     right_wrist_y = results[0].pose.rightWrist.y;
-    right_wrist_score = results[0].pose.nose.confidence ;
+    right_wrist_score = results[0].pose.keypoints[10].score;;
   }
 }
 
